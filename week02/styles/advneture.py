@@ -3,25 +3,53 @@ print ("The Mystery Forest")
 print ("You are walking alone trhough a mysterious forest. Suddenly,you hear someone calling your name. You feel scared, but curious.")
 print ("You see three things: An old wooden CABIN, a dark PATH and a strange glowing LIGHT between the trees")
 
-input = ("Where do you want to go?")
+choice = input("Where do you want to go? CABIN, PATH, or LIGHT?")
 
-if = input("CABIN. You enter the old cabin. Everything is covered in dust. Suddenly, you find an old diary on a table.")
-    
-input= ("Do you want to READ the diary or LEAVE the cabin?")
+if choice == "cabin":
+    print("You enter the old cabin. Everything is covered in dust.")
+    print("Suddenly, you find an old diary on a table.")
 
-Option_2 = input("READ. You open the diary and discover a mysterious message: Someone is watching you. The secret is hidden behind the old door. You look around and find a strange door.")
-input = ("Do you OPEN the door or WALK AWAY?")
+    second_choice = input( "Do you want to READ the diary or LEAVE the cabin?")
+    second_choice = second_choice.lower ()
 
-Option_3 = input("OPEN. You slowly open the door. Suddenly, a mysterious GHOST appears! The GHOST looks at you and says: I have been waiting for you. I can help you escape this forest.")
+    if second_choice == "read":
+        print("You open the diary and discover a mysterious message.")
 
-input = ("What do you want to do?")
+    elif second_choice =="leave":
+        print("You leave the cabin and return to the forest.")
+    else: print("Not valid.")
 
-option_1 = ("HELP")
 
-option_2 = ("RUN")
 
-option_3 = ("ASK")
 
+elif choice == "path":
+    print("You go through a tunnel, and see nothing.")
+    print("Suddenly you see a sign.")
+
+    second_choice = input("Do you go through the TUNNEL or you follow the SIGN?")
+    second_choice = second_choice.lower()
+
+    if second_choice == "tunnel":
+        print("You follow the tunnel and it leads you to a river.")
+
+    elif second_choice == "sign":
+     print("You follow the sign and it takes you to the same place you started.")
+    else: print("Not valid.")
+
+
+elif choice == "light":
+    print("You run towards the light and see a man.")
+    print("You go the opposite way and fall and can't see.")
+
+    second_choice = input("Do you run towards the light or you go the opposite way?")
+    second_choice = second_choice.lower ()
+
+    if second_choice == "run towards the light":
+     print("You run towards the light and see a man")
+     
+elif second_choice == "You go opposite way":
+    print("You go opposite way, you fall and can't see.")
+else: print("Not valid.")
 
 
 
