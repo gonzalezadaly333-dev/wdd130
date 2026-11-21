@@ -5,9 +5,11 @@ print ("You see three things: An old wooden CABIN, a dark PATH and a strange glo
 
 choice = input("Where do you want to go? CABIN, PATH, or LIGHT?")
 
+
 if choice == "cabin":
     print("You enter the old cabin. Everything is covered in dust.")
     print("Suddenly, you find an old diary on a table.")
+    
 
     second_choice = input( "Do you want to READ the diary or LEAVE the cabin?")
     second_choice = second_choice.lower ()
@@ -41,15 +43,16 @@ elif choice == "light":
     print("You run towards the light and see a man.")
     print("You go the opposite way and fall and can't see.")
 
-    second_choice = input("Do you run towards the light or you go the opposite way?")
+    second_choice = input("Do you RUN towards the light or you GO the opposite way?")
     second_choice = second_choice.lower ()
 
     if second_choice == "run towards the light":
-     print("You run towards the light and see a man")
-     
-elif second_choice == "You go opposite way":
-    print("You go opposite way, you fall and can't see.")
-else: print("Not valid.")
+        print("You run towards the light and see a man")
+        
+    elif second_choice == "go the opposite way":
+        print("You go opposite way, you fall and can't see.")
+    else:
+        print("Not valid.")
 
 
 
