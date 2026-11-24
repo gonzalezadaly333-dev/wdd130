@@ -132,8 +132,3 @@ h1 {
     display: flex;
     justify-content: space-evenly;
 }
-
-.adventures-gallery img {
-    width: 150px;
-    height: auto;
-}
