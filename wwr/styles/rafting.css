@@ -26,10 +26,13 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 header a {
     color: #ffffff;
+
 }
 
 header,
@@ -52,12 +55,21 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.socialmedia {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
 }
 
 .socialmedia img {
-    width: 120px;
+    width: 40px;
     height: auto;
     margin: 10px;
 }
@@ -97,4 +109,31 @@ h1 {
     padding: 10px;
     background-color: var(--accent2-color);
     color: #ffffff;
+}
+
+.history-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.history-content img {
+    width: 200px;
+    height: auto;
+}
+
+.adventures-gallery img {
+    width: 150px;
+    height: auto;
+}
+
+.adventures-gallery {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.adventures-gallery img {
+    width: 150px;
+    height: auto;
 }
