@@ -68,7 +68,11 @@ nav {
 
 }
 
-.socialmedia img {
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia .socialmedia img {
     width: 40px;
     height: auto;
     margin: 10px;
